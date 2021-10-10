@@ -10,7 +10,15 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; /* HACK PARA BOX MODEL */
+    scroll-snap-type: y mandatory;
 }
+/* SCROLL SNAP 
+.servicios,
+.navegacion-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}*/
 *,*:before,*:after{
     box-sizing: inherit; /* HACK PARA BOX MODEL */
 }
@@ -145,6 +153,7 @@ h1,h2,h3{
     color: var(--blanco);
 }
 /* SERVICIOS */
+
 @media (min-width: 768px){
     .servicios{
         display: grid;
@@ -232,4 +241,7 @@ h1,h2,h3{
 }
 .footer{
     text-align: center;
+}
+textarea{
+    resize: none;
 }
