@@ -4,6 +4,7 @@
     --primario: #FFC107;
     --secundario: #005C89;
     --gris: #757575;
+    --grisClaro: #DFE9F3;
 }
 /* GLOBALES */
 html{
@@ -16,6 +17,7 @@ html{
 body{
     font-size: 16px; /* 1rem es igual a 10px */
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro)  0%, var(--blanco) 100%);
 }
 .contenedor{
     max-width: 120rem;
